@@ -11,6 +11,7 @@
     tools:context=".MainActivity">
 
     <!---IMAGEN-->
+    <!--CAMBIO PRUBEA-->
     <ImageView
         android:id="@+id/LogoInicio"
         android:layout_width="300dp"
