@@ -11,15 +11,22 @@
         android:roundIcon="@mipmap/ic_cafe"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoLibro">
+
+        <!--LLAMAR ACTIVITY-->
         <activity
-            android:name=".MainActivity"
+            android:name=".RegistroActivity"
+            android:exported="false"
+        />
+
+        <activity
+            android:name=".Acceso_Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <!--FIN  ACTIVITY-->
 
+    </application>
 </manifest>
