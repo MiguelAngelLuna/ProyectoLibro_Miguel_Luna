@@ -44,10 +44,8 @@
         android:layout_margin="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Titulo_Login"
-        app:layout_constraintVertical_bias="0.466">
+        app:layout_constraintTop_toBottomOf="@id/Titulo_Login">
 
         <!--CAJA PADRE-->
         <LinearLayout
@@ -138,15 +136,6 @@
             <!---FIN CONTRASEÑA-->
 
             <!--NUEVO CODIGO-->
-            <com.google.android.material.switchmaterial.SwitchMaterial
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:drawablePadding="16dp"
-                android:paddingStart="16dp"
-                android:paddingEnd="8dp"
-                android:text="Acepto la política de privacidad y los términos y condiciones"
-                app:switchPadding="8dp" />
 
             <Button
                 android:id="@+id/btnInicio"
@@ -155,7 +144,9 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
                 android:text="Ingresar"
-                app:cornerRadius="16dp" />
+                app:cornerRadius="16dp"
+                style="@style/Boton"
+            />
 
             <TextView
                 android:layout_width="wrap_content"
