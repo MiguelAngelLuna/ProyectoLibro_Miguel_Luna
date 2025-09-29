@@ -24,6 +24,14 @@
        <RelativeLayout
            android:layout_width="match_parent"
            android:layout_height="match_parent">
+           
+           <ImageView
+               android:id="@+id/ivRegresar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_atras"
+               android:layout_margin="9dp"
+           />
 
            <!--CAJA PADRE-->
            <LinearLayout
@@ -204,8 +212,10 @@
                    android:layout_marginTop="16dp"
                    android:text="Registrarse"
                    app:cornerRadius="16dp"
+                   style="@style/Boton"
                />
            </LinearLayout>
+
 
            <!--BOTON BLOTANTE-->
             <com.google.android.material.floatingactionbutton.FloatingActionButton
