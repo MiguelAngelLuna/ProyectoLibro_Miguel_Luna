@@ -225,8 +225,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_margin="24dp"
                 app:srcCompat="@drawable/ic_flotante"
-                android:tint="@color/black"
-                app:backgroundTint="@android:color/holo_red_dark"
+                app:backgroundTint="@color/amarillo"
             />
        </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

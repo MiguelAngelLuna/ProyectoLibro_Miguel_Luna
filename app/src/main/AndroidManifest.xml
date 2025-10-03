@@ -12,9 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoLibro">
         <activity
-            android:name=".Menu_Activity"
+            android:name=".RecuperacionActivity"
             android:exported="false" />
-        <!-- LLAMAR ACTIVITY -->
+        <activity
+            android:name=".Menu_Activity"
+            android:exported="false" /> <!-- LLAMAR ACTIVITY -->
         <activity
             android:name=".RegistroActivity"
             android:exported="false" />
