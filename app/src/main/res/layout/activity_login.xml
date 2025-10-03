@@ -189,4 +189,5 @@
             <!--FIN REGISTRO-->
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
