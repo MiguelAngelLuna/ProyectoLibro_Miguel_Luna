@@ -7,26 +7,31 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_cafe"
-        android:label="@string/app_name"
+        android:label="MundoLibro"
         android:roundIcon="@mipmap/ic_cafe"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoLibro">
-
-        <!--LLAMAR ACTIVITY-->
         <activity
-            android:name=".RegistroActivity"
-            android:exported="false"
-        />
+            android:name=".ui.Inicio_Activity"
+            android:exported="false" />
+
+        <!-- LLAMAR ACTIVITY -->
+        <activity
+            android:name=".ui.RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RecuperacionActivity"
+            android:exported="false" />
 
         <activity
-            android:name=".Acceso_Activity"
+            android:name=".ui.Acceso_Activity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--FIN  ACTIVITY-->
-
     </application>
+
 </manifest>
