@@ -11,7 +11,7 @@ import com.example.proyectolibro.entity.Libros
 
 class MenuAdapter(
     private val listaHistorial: List<Libros>,
-    private val onLibroClick: (Libros) -> Unit // 👈 callback de clic
+    private val onLibroClick: (Libros) -> Unit
 ) : RecyclerView.Adapter<MenuAdapter.HistorialViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HistorialViewHolder {
@@ -36,7 +36,7 @@ class MenuAdapter(
         }
         holder.Categoria.text = nombreCategoria
 
-        // 👇 Aquí el clic del libro
+        // clic del libro
         holder.itemView.setOnClickListener {
             onLibroClick(libro)
         }

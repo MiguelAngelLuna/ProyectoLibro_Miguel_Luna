@@ -70,8 +70,9 @@ class Acceso_Activity : AppCompatActivity() {
             return
         }
 
-        // Validar formato de correo Gmail (puedes ajustarlo si tu app permite otros dominios)
+        // Validar formato de correo Gmail
         val patronCorreo = Regex("^[a-zA-Z0-9._%+-]{6,}@gmail\\.com$")
+
         if (!correo.matches(patronCorreo)) {
             Toast.makeText(this, "Correo inválido. Usa un formato correcto", Toast.LENGTH_SHORT).show()
             return
@@ -88,10 +89,10 @@ class Acceso_Activity : AppCompatActivity() {
             return
         }
 
-        // Mostrar mensaje de carga (simulación)
+        // Mostrar mensaje de carga
         Toast.makeText(this, "Verificando credenciales...", Toast.LENGTH_SHORT).show()
 
-        // ===== CONSULTA A LA BASE DE DATOS =====
+        //-----CONSULTA A LA BASE DE DATOS ------
         val dbHelper = AppDataBaseHelper(this)
         val db = dbHelper.readableDatabase
 
@@ -111,6 +112,7 @@ class Acceso_Activity : AppCompatActivity() {
 
                     // Redirigir al menú principal
                     val intent = Intent(this, Inicio_Activity::class.java)
+
                     intent.putExtra("nombreUsuario", nombre)
                     startActivity(intent)
                     finish()

@@ -12,7 +12,7 @@ import com.example.proyectolibro.entity.Libros
 class PrincipalAdapter(
     private val listaCabecera: List<Libros>,
     private val listaLibros: List<Libros>,
-    private val onLibroClick: (Libros) -> Unit // 👈 nuevo parámetro
+    private val onLibroClick: (Libros) -> Unit
 
 ) : RecyclerView.Adapter<PrincipalAdapter.PrincipalViewHolder>() {
 

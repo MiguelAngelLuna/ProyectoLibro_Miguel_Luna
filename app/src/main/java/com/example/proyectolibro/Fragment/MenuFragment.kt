@@ -47,7 +47,7 @@ class MenuFragment : Fragment() {
             Libros(13, "KRIEG", "", "", 30.0, R.mipmap.ic_comic5, 11)
         )
 
-        // 👇 AQUÍ está la magia
+        // Está la magia
         principalAdapter = PrincipalAdapter(listaCabecera, listaLibros) { libroSeleccionado ->
             val bundle = Bundle().apply {
                 putString("titulo", libroSeleccionado.Titulo)
@@ -61,7 +61,7 @@ class MenuFragment : Fragment() {
             fragment.arguments = bundle
 
             parentFragmentManager.beginTransaction()
-                .replace(R.id.dlayMenu, fragment) // 👈 asegúrate que este sea tu id del contenedor
+                .replace(R.id.dlayMenu, fragment)
                 .addToBackStack(null)
                 .commit()
         }

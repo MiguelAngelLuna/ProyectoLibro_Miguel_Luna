@@ -60,7 +60,7 @@ class RegistroActivity : AppCompatActivity() {
         val claveTxt = clave.text.toString().trim()
         val generoSeleccionado = generoGrupo.checkedRadioButtonId
 
-        // ===== VALIDACIONES DE CAMPOS =====
+        // --- VALIDACIONES DE CAMPOS ----
         if (nombre.isEmpty()) {
             Toast.makeText(this, "Ingresa tu nombre", Toast.LENGTH_SHORT).show()
             return
@@ -71,7 +71,7 @@ class RegistroActivity : AppCompatActivity() {
             return
         }
 
-        // Validar formato de correo (solo Gmail con mínimo 6 caracteres antes del @)
+        // Validar formato de correo
         val patronCorreo = Regex("^[a-zA-Z0-9._%+-]{6,}@gmail\\.com$")
         if (!correoTxt.matches(patronCorreo)) {
             Toast.makeText(this, "Correo inválido. Debe ser un @gmail.com válido", Toast.LENGTH_SHORT).show()
